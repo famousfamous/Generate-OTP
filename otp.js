@@ -7,9 +7,9 @@ function otpGenerate() {
     otp += digits[Math.floor(Math.random() * 10)];
   }
 
-  if (document.getElementById("otp") === null) {
-    optShow.textContent = "<span>some</span>";
-  }
+//   if (document.getElementById("otp") !== null) {
+    optShow.innerHTML = '<span></span>';
+//   }
 
   setTimeout(() => {
     optShow.innerHTML = otp;
